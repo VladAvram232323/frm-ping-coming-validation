@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2rem;
+  background-color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 5rem 0;
+}
+
+.title {
+  color: var(--gray);
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  margin-bottom: 2rem;
+}
+
+span {
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+.desc {
+  font-size: 1.8rem;
+  color: var(--gray);
+}
+
+form {
+  margin-bottom: 7rem;
+  text-align: start;
+}
+
+input {
+  border: 1px solid var(--pale-blue);
+  border-radius: 30px;
+  padding: 1rem 12rem 1rem 2rem;
+  margin-top: 5rem;
+}
+
+input::placeholder {
+  color: var(--pale-blue);
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background-color: var(--blue);
+  border: none;
+  color: white;
+  border-radius: 30px;
+  padding: 1rem 4rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(110%);
+}
+
+.image img {
+  max-width: 60%;
+  margin-bottom: 6rem;
+}
+
+.social {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+}
+
+li {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+li img {
+  width: 1em;
+  margin-top: 0.21em;
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(42%) sepia(58%) saturate(2312%)
+    hue-rotate(208deg) brightness(99%) contrast(93%);
+}
+
+li:hover {
+  background-color: var(--pale-blue);
+}
+
+.copy {
+  color: var(--gray);
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+.error {
+  display: none;
+  color: var(--light-red);
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  text-align: start;
+}
